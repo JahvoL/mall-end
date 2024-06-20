@@ -66,7 +66,7 @@ CREATE TABLE `cart` (
 
 LOCK TABLES `cart` WRITE;
 /*!40000 ALTER TABLE `cart` DISABLE KEYS */;
-INSERT INTO `cart` VALUES (4,4,22,3,'2022-02-16 21:03:53'),(5,1,21,1,'2022-03-04 22:08:00'),(6,4,11,1,'2022-03-04 22:08:27'),(8,1,25,4,'2024-06-18 16:16:23');
+INSERT INTO `cart` VALUES (4,4,22,3,'2022-02-16 21:03:53'),(5,1,21,1,'2022-03-04 22:08:00'),(6,4,11,1,'2022-03-04 22:08:27'),(8,1,25,5,'2024-06-18 16:16:23');
 /*!40000 ALTER TABLE `cart` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -117,7 +117,7 @@ CREATE TABLE `goods` (
   `create_time` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '创建时间',
   `recommend` tinyint(1) DEFAULT NULL COMMENT '是否推荐：0不推荐，1推荐',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='商品';
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC COMMENT='商品';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -126,7 +126,7 @@ CREATE TABLE `goods` (
 
 LOCK TABLES `goods` WRITE;
 /*!40000 ALTER TABLE `goods` DISABLE KEYS */;
-INSERT INTO `goods` VALUES (1,'希望之线（东野圭吾新代表作，高分作品TOP5！）','《白夜行》《嫌疑人X的献身》《解忧杂货店》《恶意》后，豆瓣东野圭吾第五高分新作！好看到爆炸的人情推理长篇。上市首周登顶日本畅销书总榜，周刊文春推理榜年度推荐。','g1001',35.00,0.90,997,4,3,1,'[\"http://localhost:9999/files/1622098971802\",\"http://localhost:9999/files/1622098971804\",\"http://localhost:9999/files/1622098971807\"]',NULL,1),(2,'Apple 苹果 iPhone 11 全网通手机','iPhone 11 全网通手机','g1002',4569.00,1.00,97,0,3,4,'[\"http://localhost:9999/files/1622091526177\"]',NULL,1),(3,'独立思考：谁在影响谁','独立思考是获取自由与成功的*重要能力之一，是终身学习的践行核心，本系列书籍已经影响10,000,000人投入学习、阅读和践行','g1002',49.00,0.50,97,1,3,1,'[\"http://localhost:9999/files/1622092102515\"]','2021-05-26 07:32:22',1),(4,'文城（余华新书，时隔8年重磅归来，《活着》之后又一精彩力作！）','余华时隔8年重磅新作！写《活着》的余华又回来了！人生就是自己的往事和他人的序章。关于一个人和他一生的寻找，以及一群人和一个汹涌的年代。精彩过瘾，不负等待！易烊千玺挚爱作家。限量赠送余华珍藏生肖漫画！','g1004',39.50,0.90,995,0,5,1,'[\"http://localhost:9999/files/1622092112546\"]','2021-05-26 07:46:19',1),(5,'艺术是什么：极简西方美术史','B站27万人喜欢上的西方美术史课','g1006',80.00,0.47,998,1,2,1,'[\"http://localhost:9999/files/1622092120531\"]','2021-05-26 07:48:45',1);
+INSERT INTO `goods` VALUES (1,'nb笔','本笔非常好，能够直接写出超越王羲之的字，能够直接创造前无古人后无来者的字体','g1001',35.00,0.90,997,4,3,1,'[\"http://localhost:9999/files/1718757914486\"]',NULL,1),(2,'小nb笔','msobi 11 全网通毛笔，具有联网功能','g1002',12.00,1.00,97,0,3,1,'[\"http://localhost:9999/files/1718758646603\"]',NULL,1),(3,'隐形墨','有较强的安全性，能够防止红外线检测，监控下直接隐形','g1002',49.00,0.50,97,1,3,2,'[\"http://localhost:9999/files/1718758972037\"]','2021-05-26 07:32:22',1),(4,'宣纸','其粗糙程度可以磨刀，非常好用','g1004',39.50,0.90,995,0,5,3,'[\"http://localhost:9999/files/1718759031801\"]','2021-05-26 07:46:19',1),(5,'砚台','能够让隐形墨无所遁形，建议配套购买','g1006',80.00,0.47,998,1,2,4,'[\"http://localhost:9999/files/1718759102530\"]','2021-05-26 07:48:45',1),(15,'大砚台','比砚台更plus一点','g006',70.00,0.80,99999,0,0,4,'[\"http://localhost:9999/files/1718759173148\"]','2024-06-19 09:06:06',1);
 /*!40000 ALTER TABLE `goods` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -283,4 +283,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-18 23:43:12
+-- Dump completed on 2024-06-19  9:33:06
